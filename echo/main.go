@@ -18,7 +18,7 @@ func main() {
 }
 
 func getUser(c echo.Context) error {
-	id, git := c.Param("id"), "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"
+	id := c.Param("id")
 
-	return c.JSON(http.StatusOK, id+git)
+	return c.JSON(http.StatusOK, id)
 }
