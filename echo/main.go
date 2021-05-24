@@ -13,7 +13,6 @@ func main() {
 		return c.String(http.StatusOK, "Hello, World!")
 	})
 	e.GET("/user/:id", getUser)
-	e.GET("/ikan/:id", getUser)
 	e.Logger.Fatal(e.Start(":1323"))
 }
 

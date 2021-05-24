@@ -1,4 +1,4 @@
-module api-go
+module echo-go
 
 go 1.16
 
